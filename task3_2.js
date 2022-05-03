@@ -53,23 +53,14 @@ const enterprises = [
       ]
     }
   ]
-   function chekFind(chekId, arrResult = []){
-    for(let i of enterprises){
-      if(i.id == chekId){
-        console.log(i.id)
-          arrResult.unshift(i.name);
+
+  function chek(arg){
+  for(let i = 0; i < enterprises.length; i++){
+    for(let item of enterprises[i].departments){
+      
+        console.log(item.toString())
       }
-      }
+    }
+  }
   
-}
-   console.log(chekFind(2))
-
- 
-
-
-
-
-
-   //   function returName(id){
-
-//   }
+  chek('id')
